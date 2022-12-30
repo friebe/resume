@@ -1,0 +1,19 @@
+{
+  "name": "resume",
+  "packageManager": "yarn@3.3.0",
+  "dependencies": {
+    "css": "^3.0.0",
+    "handlebars": "^4.7.7",
+    "iconify-icon": "^1.0.2",
+    "puppeteer": "^19.4.1",
+    "tailwindcss": "^3.2.4"
+  },
+  "scripts": {
+    "serve": "node serve.js --watch",
+    "build": "node build.js",
+    "css": "npx tailwindcss -i ./assets/css/source.css -o ./dist/assets/css/main.css"
+  },
+  "engines": {
+    "node": ">=18.11.0"
+  }
+}

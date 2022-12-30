@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .section-head {
+        @apply bg-black text-white font-bold py-0.5 px-2 inline mb-3;
+    }
+}
+
+@layer base {
+    .link {
+        @apply underline-offset-4 border-b-2 border-gray-400 border-dotted;
+    }
+}

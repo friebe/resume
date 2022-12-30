@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="" type="image/svg+xml">
+    <link rel="icon" href="" type="image/png">
+    <title>{{#resume.basics}}{{name}}{{/resume.basics}} - Résumé</title>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    {{!-- For dev mode include tailwind without purge --}}
+    {{!-- <script src="https://cdn.tailwindcss.com"></script> --}}
+    <style>{{{css}}}</style>
+</head>
+
+<body class="mx-5 mt-16 mb-3 print:mt-0">
+    <div class="grid grid-cols-12 justify-center grid-flow-col md:gap-10">
+        {{#resume.basics}}
+        <div class="col-start-4 col-span-6 md:col-start-2 md:col-span-2">
+            <div class="profile-card">
+                <div class="bg-white">
+                    <div class="flex mb-3 justify-center">
+                        <img class="w-40 h-auto bg-white rounded-full shadow-2xl print:hidden" alt="{{name}}"
+                            src="{{picture}}" />
+                    </div>
+                </div>
+
+                <div class="my-8">
+                    <div class="profile-details text-center">
+                        <div class="pb-5">
+                            <h5 class="mb-1 text-3xl font-medium text-gray-900 md:text-xl">Jan Friebe</h5>
+                            <span class="text-md text-gray-700">{{label}}</span>
+                        </div>
+
+                        {{#if email}}
+                        <div class="pb-5">
+                            {{!-- <span class="text-gray-500 inline iconify" data-icon="ri:mail-fill"></span> --}}
+                            <a href="mailto:{{email}}"
+                                class="text-sm text-gray-900 underline-offset-4 border-b-2 border-gray-400 border-dotted"
+                                target="_blank">{{email}}
+                            </a><br>
+                            {{/if}}
+
+                            {{#if phone}}
+                            {{!-- <span class="text-gray-500 inline iconify" data-icon="ri:phone-fill"></span> --}}
+                            <a href="tel://{{phone}}"
+                                class="text-sm text-gray-900 underline-offset-4 border-b-2 border-gray-400 border-dotted"
+                                target="_blank">
+                                {{phone}}
+                            </a>
+                        </div>
+                        {{/if}}
+
+                        <div class="flex gap-5 justify-center">
+                            {{#profiles}}
+                            <a class="text-gray-500" href="{{url}}" target="_blank">
+                                <span class="iconify" data-icon="{{toSocialIcon network}}"></span>
+                            </a>
+                            {{/profiles}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{/resume.basics}}
+
+        <div class="col-start-1 col-span-12 md:col-start-4 md:col-span-8">
+            <section class="pb-5">
+                <h4 class="pb-3">
+                    <span class="bg-black text-white font-bold py-0.5 px-2 inline mb-3">
+                        About</span>
+                </h4>
+                <p> {{breaklines resume.basics.summary}} </p>
+            </section>
+
+            {{#if resume.projects}}
+            <section class="pb-5">
+                <h4 class="pb-3">
+                    <span class="bg-black text-white font-bold py-0.5 px-2 inline mb-3">
+                        Projects</span>
+                </h4>
+                {{#each resume.projects}}
+                <div class="mb-3">
+                    <strong>{{displayName}}</strong>
+                    {{#if githubUrl}}
+                    <a target="_blank" class="ml-2" href="{{githubUrl}}">
+                        <span class="inline iconify" data-icon="ri:github-fill"></span>
+                    </a>
+                    {{/if}}
+
+                    {{#if website}}
+                    <a target="_blank" class="ml-1" href="{{website}}">
+                        <span class="inline iconify" data-icon="ri:arrow-right-up-line"></span>
+                    </a>
+                    {{/if}}
+                    <p class="text-gray-600">
+                        <small> {{summary}}</small>
+                    </p>
+                </div>
+                {{/each}}
+            </section>
+            {{/if}}
+
+            <section class="pb-5">
+                <h4 class="pb-3">
+                    <span class="bg-black text-white font-bold py-0.5 px-2 inline mb-3">
+                        Work experience</span>
+                </h4>
+                <ul>
+                    {{#each resume.work}}
+                    <li>
+                        <div class=>
+                            <p>
+                                <strong>{{#if website}}
+                                    <a class="border-b-2 border-gray-400 border-dotted underline-offset-4"
+                                        href="{{website}}" target="_blank">{{company}}
+                                    </a>{{else}}{{company}}{{/if}}
+                                </strong>
+                                <span>{{position}}</span>
+                            </p>
+                            <p>
+                                <small>
+                                    <span class="space-right"> {{startDate}} - {{#if
+                                        endDate}}{{endDate}}{{/if}} | {{location}}</span>
+                                </small>
+                            </p>
+                            <p>{{summary}}</p>
+                            {{#if highlights}}
+                            <ul class='pl-8 pt-2 list-disc'>
+                                {{#each highlights}}
+                                <li> {{.}} </li>
+                                {{/each}}
+                            </ul>
+                            {{/if}}
+                        </div>
+                    </li>
+                    {{/each}}
+                </ul>
+            </section>
+
+            <section class="pb-5">
+                <h4 class="pb-3">
+                    <span class="section-head">
+                        Stack</span>
+                </h4>
+
+                {{#resume.skills}}
+                <dl class="mb-8 ovrflow-hidden clear-both">
+                    <dt style="max-width: 100px; width: 20%" class="float-left font-bold">{{name}}</dt>
+                    <dd style="width: 80%" class="float-left ">
+                        {{join keywords}}
+                    </dd>
+                </dl>
+                {{/resume.skills}}
+            </section>
+
+            <section class="pb-5">
+                <h4 class="pb-3">
+                    <span class="section-head">
+                        Education</span>
+                </h4>
+
+                {{#each resume.education}}
+                <div class="mb-3">
+                    <p>
+                        <strong>{{#if url}}
+                            <a class="border-b-2 border-gray-400 border-dotted underline-offset-4" href="{{url}}"
+                                target="_blank">{{institution}}
+                            </a>{{else}}{{institution}}{{/if}}
+                        </strong>
+                        <span>{{area}}</span>
+                    </p>
+                    <p>
+                        <small>
+                            <span class=""> {{startDate}} - {{#if
+                                endDate}}{{endDate}}{{/if}} | {{location}}</span>
+                        </small>
+                    </p>
+                    <p>{{summary}}</p>
+                </div>
+                {{/each}}
+            </section>
+
+            <section class="pb-5">
+                <h4 class="pb-3">
+                    <span class="section-head">
+                        Languages</span>
+                </h4>
+            </section>
+
+            <div class="text-center">
+                <a target="_blank" class="print:hidden" href="https://resume.jan-friebe.de/resume.pdf">
+                    <span class="underline-offset-4 border-b-2 border-gray-400 border-dotted">
+                        PDF Version
+                    </span>
+                </a>
+
+
+                <a target="_blank" href="https://resume.jan-friebe.de/">
+                    <span class="underline-offset-4 border-b-2 border-gray-400 border-dotted hidden print:block">
+                        Online Version
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

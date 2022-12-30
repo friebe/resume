@@ -1,0 +1,160 @@
+{
+    "basics": {
+        "name": "Jan Friebe",
+        "picture": "https://friebe.uber.space/img/band/avatar.png",
+        "label": "Web developer",
+        "headline": "Willing to learn",
+        "summary": " My name is Jan Friebe, a German based and trained IT specialist in application development and an graphic assitent in print and digital. My passion in software development lies between functionality and good, aesthetic designs. I take care in the experience and a maintainable code quality of products.\n\nI am also an ambitious, willing to learn and passionate dude with fun and interest in new technologies especially in frontend related topics.",
+        "website": "https://jan-friebe.de",
+        "email": "kontakt@jan-friebe.de",
+        "phone": "+49 1575 9460303",
+        "profiles": [
+            {
+                "network": "GitHub",
+                "url": "https://github.com/friebe"
+            },
+            {
+                "network": "Twitter",
+                "url": "https://twitter.com/janfriebe"
+            },
+            {
+                "network": "Portfolio",
+                "url": "https://jan-friebe.de"
+            },
+            {
+                "network": "Xing",
+                "url": "https://www.xing.com/profile/Jan_Friebe2"
+            }
+        ]
+    },
+    "skills": [
+        {
+            "keywords": [
+                "JavaScript/Typescript",
+                "Vue",
+                "React/Next",
+                "Vite",
+                "HTML",
+                "CSS/SCSS"
+            ],
+            "level": "Intermediate",
+            "name": "Frontend"
+        },
+        {
+            "keywords": [
+                "Node",
+                "MySQL",
+                "Symfony"
+            ],
+            "level": "Intermediate",
+            "name": "Backend"
+        },
+        {
+            "keywords": [
+                "Tauri",
+                "PWA"
+            ],
+            "level": "Beginner",
+            "name": "Mobile"
+        },
+        {
+            "keywords": [
+                "Ruby",
+                "Java",
+                "JavaScript",
+                "PHP"
+            ],
+            "level": "Intermediate",
+            "name": "Languages"
+        }
+    ],
+    "projects": [
+        {
+            "displayName": "Static Website with SSR Shopping Cart",
+            "summary": "Site build with static generator Astro.js. Frontend build with Alpine.js and Tailwind CSS. Invoice generation API based with SLIM PHP",
+            "website": "https://vitest.dev/",
+            "githubUrl": "https://github.com/vitest-dev/vitest",
+            "primaryLanguage": "Javascript/Typescript/PHP"
+        },
+        {
+            "displayName": "Website build with kirby CMS",
+            "summary": "Static, file based website",
+            "website": "https://vitest.dev/",
+            "githubUrl": "https://github.com/vitest-dev/vitest",
+            "primaryLanguage": "PHP/Symfony"
+        },
+        {
+            "displayName": "Portfolio",
+            "summary": "Website build static generator Astro.js and Tailwind CSS",
+            "website": "https://vitest.dev/",
+            "githubUrl": "https://github.com/vitest-dev/vitest",
+            "primaryLanguage": "Javascript/Typescript"
+        },
+        {
+            "displayName": "Resume Generator",
+            "summary": "Build static html file via json data into handlebar template and generate pdf file via pupeteer",
+            "website": "https://vitest.dev/",
+            "githubUrl": "https://github.com/vitest-dev/vitest",
+            "primaryLanguage": "Node/javascript"
+        }
+    ],
+    "work": [
+        {
+            "company": "ODAS IT",
+            "position": "Frontend Engineer",
+            "website": "https://delos.biz/",
+            "location": "Dorsten",
+            "startDate": "2021",
+            "endDate": "Present",
+            "highlights": [
+                "Integrated Vite into Nuxt 3 resulted in 50x faster development time.",
+                "Authored `unplugin` unifing the API between Webpack and Vite.",
+                "Created Vitest that improved the developer experience on testing."
+            ]
+        }
+    ],
+    "education": [
+        {
+            "institution": "Stadwerke Gelsenkirchen",
+            "area": "IT Specialist Application Development",
+            "url": "https://www.stadtwerke-gelsenkirchen.de/",
+            "startDate": "2012",
+            "endDate": "2015",
+            "location": "Gelsenkirchen"
+        },
+        {
+            "institution": "Max born Berufskolleg",
+            "area": "Design Assistant print & digital",
+            "url": "https://www.max-born-berufskolleg.de/",
+            "startDate": "2009",
+            "endDate": "2012",
+            "location": "Recklinghausen"
+        }
+    ],
+    "languages": [
+        {
+            "language": "German",
+            "fluency": "Native speaker"
+        },
+        {
+            "language": "English",
+            "fluency": "Intermediate"
+        }
+    ],
+    "interests": [
+        {
+            "name": "Sport",
+            "keywords": [
+                "Boxing",
+                "Jogging"
+            ]
+        },
+        {
+            "name": "Reading",
+            "keywords": [
+                "Biographies",
+                "Nonfiction"
+            ]
+        }
+    ]
+}
