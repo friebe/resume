@@ -4,7 +4,7 @@
         "picture": "https://friebe.uber.space/img/band/avatar.png",
         "label": "Web developer",
         "headline": "Willing to learn",
-        "summary": " My name is Jan Friebe, a German based and trained IT specialist in application development and an graphic assitent in print and digital. My passion in software development lies between functionality and good, aesthetic designs. I take care in the experience and a maintainable code quality of products.\n\nI am also an ambitious, willing to learn and passionate dude with fun and interest in new technologies especially in frontend related topics.",
+        "summary": " My name is Jan Friebe, a German based and trained IT specialist in application development and an graphic assitant in print and digital. My passion in software development lies between functionality and good, aesthetic designs. I take care in the experience, architecture, and code quality of the things I build..\n\nI am also an ambitious, willing to learn and passionate dude with fun and interest in new technologies especially in frontend related topics.",
         "website": "https://jan-friebe.de",
         "email": "kontakt@jan-friebe.de",
         "phone": "+49 1575 9460303",
@@ -66,6 +66,18 @@
             ],
             "level": "Intermediate",
             "name": "Languages"
+        },
+        {
+            "keywords": [
+                "AD PS/AI/ID/XD",
+                "Figma",
+                "Protyping",
+                "Wireframing",
+                "Pen and Paper",
+                "RWD"
+            ],
+            "level": "Intermediate",
+            "name": "Design"
         }
     ],
     "projects": [
@@ -73,21 +85,21 @@
             "displayName": "Static Website with SSR Shopping Cart",
             "summary": "Site build with static generator Astro.js. Frontend build with Alpine.js and Tailwind CSS. Invoice generation API based with SLIM PHP",
             "website": "https://vitest.dev/",
-            "githubUrl": "https://github.com/vitest-dev/vitest",
+            "githubUrl": "https://github.com/friebe/frostshock-website",
             "primaryLanguage": "Javascript/Typescript/PHP"
         },
         {
             "displayName": "Website build with kirby CMS",
             "summary": "Static, file based website",
             "website": "https://vitest.dev/",
-            "githubUrl": "https://github.com/vitest-dev/vitest",
+            "githubUrl": "https://github.com/friebe/praxis-rueckrat",
             "primaryLanguage": "PHP/Symfony"
         },
         {
             "displayName": "Portfolio",
-            "summary": "Website build static generator Astro.js and Tailwind CSS",
+            "summary": "Website build by static generator Astro.js and Tailwind CSS",
             "website": "https://vitest.dev/",
-            "githubUrl": "https://github.com/vitest-dev/vitest",
+            "githubUrl": "https://github.com/friebe/portfolio",
             "primaryLanguage": "Javascript/Typescript"
         },
         {
@@ -156,5 +168,14 @@
                 "Nonfiction"
             ]
         }
+    ],
+    "softskills": [
+        "engaged",
+        "reliable",
+        "self-initiated",
+        "responsible",
+        "team-player",
+        "emphatic",
+        "curious"
     ]
 }

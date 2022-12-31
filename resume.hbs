@@ -14,7 +14,7 @@
     <style>{{{css}}}</style>
 </head>
 
-<body class="mx-5 mt-16 mb-3 print:mt-0">
+<body class="mx-5 mt-16 mb-3 print:mt-0 text-sm">
     <div class="grid grid-cols-12 justify-center grid-flow-col md:gap-10">
         {{#resume.basics}}
         <div class="col-start-4 col-span-6 md:col-start-2 md:col-span-2">
@@ -36,17 +36,13 @@
                         {{#if email}}
                         <div class="pb-5">
                             {{!-- <span class="text-gray-500 inline iconify" data-icon="ri:mail-fill"></span> --}}
-                            <a href="mailto:{{email}}"
-                                class="text-sm text-gray-900 underline-offset-4 border-b-2 border-gray-400 border-dotted"
-                                target="_blank">{{email}}
+                            <a href="mailto:{{email}}" class="text-sm text-gray-900 link" target="_blank">{{email}}
                             </a><br>
                             {{/if}}
 
                             {{#if phone}}
                             {{!-- <span class="text-gray-500 inline iconify" data-icon="ri:phone-fill"></span> --}}
-                            <a href="tel://{{phone}}"
-                                class="text-sm text-gray-900 underline-offset-4 border-b-2 border-gray-400 border-dotted"
-                                target="_blank">
+                            <a href="tel://{{phone}}" class="text-sm text-gray-900 link" target="_blank">
                                 {{phone}}
                             </a>
                         </div>
@@ -68,7 +64,7 @@
         <div class="col-start-1 col-span-12 md:col-start-4 md:col-span-8">
             <section class="pb-5">
                 <h4 class="pb-3">
-                    <span class="bg-black text-white font-bold py-0.5 px-2 inline mb-3">
+                    <span class="section-head">
                         About</span>
                 </h4>
                 <p> {{breaklines resume.basics.summary}} </p>
@@ -77,7 +73,7 @@
             {{#if resume.projects}}
             <section class="pb-5">
                 <h4 class="pb-3">
-                    <span class="bg-black text-white font-bold py-0.5 px-2 inline mb-3">
+                    <span class="section-head">
                         Projects</span>
                 </h4>
                 {{#each resume.projects}}
@@ -104,55 +100,32 @@
 
             <section class="pb-5">
                 <h4 class="pb-3">
-                    <span class="bg-black text-white font-bold py-0.5 px-2 inline mb-3">
+                    <span class="section-head">
                         Work experience</span>
                 </h4>
-                <ul>
-                    {{#each resume.work}}
-                    <li>
-                        <div class=>
-                            <p>
-                                <strong>{{#if website}}
-                                    <a class="border-b-2 border-gray-400 border-dotted underline-offset-4"
-                                        href="{{website}}" target="_blank">{{company}}
-                                    </a>{{else}}{{company}}{{/if}}
-                                </strong>
-                                <span>{{position}}</span>
-                            </p>
-                            <p>
-                                <small>
-                                    <span class="space-right"> {{startDate}} - {{#if
-                                        endDate}}{{endDate}}{{/if}} | {{location}}</span>
-                                </small>
-                            </p>
-                            <p>{{summary}}</p>
-                            {{#if highlights}}
-                            <ul class='pl-8 pt-2 list-disc'>
-                                {{#each highlights}}
-                                <li> {{.}} </li>
-                                {{/each}}
-                            </ul>
-                            {{/if}}
-                        </div>
-                    </li>
+                {{#each resume.work}}
+                <p>
+                    <strong>{{#if website}}
+                        <a class="link" href="{{website}}" target="_blank">{{company}}
+                        </a>{{else}}{{company}}{{/if}}
+                    </strong>
+                    <span>{{position}}</span>
+                </p>
+                <p>
+                    <small>
+                        <span class="space-right"> {{startDate}} - {{#if
+                            endDate}}{{endDate}}{{/if}} | {{location}}</span>
+                    </small>
+                </p>
+                <p>{{summary}}</p>
+                {{#if highlights}}
+                <ul class='pl-8 pt-2 list-disc'>
+                    {{#each highlights}}
+                    <li> {{.}} </li>
                     {{/each}}
                 </ul>
-            </section>
-
-            <section class="pb-5">
-                <h4 class="pb-3">
-                    <span class="section-head">
-                        Stack</span>
-                </h4>
-
-                {{#resume.skills}}
-                <dl class="mb-8 ovrflow-hidden clear-both">
-                    <dt style="max-width: 100px; width: 20%" class="float-left font-bold">{{name}}</dt>
-                    <dd style="width: 80%" class="float-left ">
-                        {{join keywords}}
-                    </dd>
-                </dl>
-                {{/resume.skills}}
+                {{/if}}
+                {{/each}}
             </section>
 
             <section class="pb-5">
@@ -165,8 +138,7 @@
                 <div class="mb-3">
                     <p>
                         <strong>{{#if url}}
-                            <a class="border-b-2 border-gray-400 border-dotted underline-offset-4" href="{{url}}"
-                                target="_blank">{{institution}}
+                            <a class="link" href="{{url}}" target="_blank">{{institution}}
                             </a>{{else}}{{institution}}{{/if}}
                         </strong>
                         <span>{{area}}</span>
@@ -185,20 +157,45 @@
             <section class="pb-5">
                 <h4 class="pb-3">
                     <span class="section-head">
-                        Languages</span>
+                        Stack</span>
                 </h4>
+
+                {{#resume.skills}}
+                <dl class="mb-8 ovrflow-hidden clear-both">
+                    <dt style="max-width: 120px; width: 20%" class="float-left font-bold">{{name}}</dt>
+                    <dd style="width: 80%" class="float-left ">
+                        {{join keywords}}
+                    </dd>
+                </dl>
+                {{/resume.skills}}
+            </section>
+            
+            <section class="pb-5">
+                <h4 class="pb-3">
+                    <span class="section-head">
+                        Interests</span>
+                </h4>
+
+                {{#resume.interests}}
+                <dl class="mb-8 ovrflow-hidden clear-both">
+                    <dt style="max-width: 120px; width: 20%" class="float-left font-bold">{{name}}</dt>
+                    <dd style="width: 80%" class="float-left ">
+                        {{join keywords}}
+                    </dd>
+                </dl>
+                {{/resume.interests}}
             </section>
 
             <div class="text-center">
                 <a target="_blank" class="print:hidden" href="https://resume.jan-friebe.de/resume.pdf">
-                    <span class="underline-offset-4 border-b-2 border-gray-400 border-dotted">
+                    <span class="link">
                         PDF Version
                     </span>
                 </a>
 
 
-                <a target="_blank" href="https://resume.jan-friebe.de/">
-                    <span class="underline-offset-4 border-b-2 border-gray-400 border-dotted hidden print:block">
+                <a target="_blank" class="hidden print:block" href="https://resume.jan-friebe.de/">
+                    <span class="link">
                         Online Version
                     </span>
                 </a>
