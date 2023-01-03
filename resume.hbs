@@ -105,28 +105,30 @@
                         Work experience</span>
                 </h4>
                 {{#each resume.work}}
-                <p>
-                    <strong>{{#if website}}
-                        <a class="link" href="{{website}}" target="_blank">{{company}}
-                        </a>{{else}}{{company}}{{/if}}
-                    </strong>
-                    <span>{{position}}</span>
-                </p>
-                <p>
-                    <small>
-                        <span class="space-right"> {{startDate}} - {{#if
-                            endDate}}{{endDate}}{{/if}} | {{location}}</span>
-                    </small>
-                </p>
-                <p>{{summary}}</p>
-                {{#if highlights}}
-                <ul class='pl-8 pt-2 list-disc'>
-                    {{#each highlights}}
-                    <li> {{.}} </li>
+                <div class="mb-3">
+                    <p>
+                        <strong>{{#if website}}
+                            <a class="link" href="{{website}}" target="_blank">{{company}}
+                            </a>{{else}}{{company}}{{/if}}
+                        </strong>
+                        <span>{{position}}</span>
+                    </p>
+                    <p>
+                        <small>
+                            <span class="space-right"> {{startDate}} - {{#if
+                                endDate}}{{endDate}}{{/if}} | {{location}}</span>
+                        </small>
+                    </p>
+                    <p>{{summary}}</p>
+                    {{#if highlights}}
+                    <ul class='pl-8 pt-2 list-disc'>
+                        {{#each highlights}}
+                        <li> {{.}} </li>
+                        {{/each}}
+                    </ul>
+                    {{/if}}
+                    </div>
                     {{/each}}
-                </ul>
-                {{/if}}
-                {{/each}}
             </section>
 
             <section class="pb-5">

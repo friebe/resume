@@ -118,10 +118,73 @@
             "location": "Dorsten",
             "startDate": "2021",
             "endDate": "Present",
+            "highlights": []
+        },
+        {
+            "company": "Impact Technology GmbH",
+            "position": "Software Engineer",
+            "website": "https://impact-tec.com/",
+            "location": "Essen",
+            "startDate": "Sep. 2019",
+            "endDate": "Dez. 2020",
             "highlights": [
-                "Integrated Vite into Nuxt 3 resulted in 50x faster development time.",
-                "Authored `unplugin` unifing the API between Webpack and Vite.",
-                "Created Vitest that improved the developer experience on testing."
+                "Intern fake OCR application in react",
+                "Next.js/PHP application to configure your own shoes. Buy via api based shopware instance.",
+                "Next.js CRM application to collect data about different apartments"
+            ]
+        },
+        {
+            "company": "9elements Agency GmbH",
+            "position": "Software Engineer",
+            "website": "https://9elements.com/de",
+            "location": "Bochum",
+            "startDate": "Aug. 2019",
+            "endDate": "Aug. 2019",
+            "highlights": [
+                "Learn Ruby on Rails",
+                "Learn Angular.js"
+            ]
+        },
+        {
+            "company": "ODAS IT",
+            "position": "PHP Developer",
+            "website": "https://delos.biz",
+            "location": "Dorsten",
+            "startDate": "Mai 2016",
+            "endDate": "Aug. 2019",
+            "highlights": [
+                "First Steps in Symfony Component Development",
+                "Contao CMS module developmen in PHP",
+                "CSS/SCSS",
+                "Customer Support",
+                "Web - and Printdesign"
+            ]
+        },
+        {
+            "company": "ODAS IT",
+            "position": "Frontend Engineer",
+            "website": "http://www.mrotzeck.com/",
+            "location": "Essen",
+            "startDate": "Dez. 2015",
+            "endDate": "März 2016",
+            "highlights": [
+                "React Component Engeneering",
+                "Fix CSS Issues",
+                "Web - and Printdesign"
+            ]
+        },
+        {
+            "company": "Gelsen-net",
+            "position": "Software Engineer",
+            "website": "https://www.stadtwerke-gelsenkirchen.de/",
+            "location": "Gelsenkirchen",
+            "startDate": "Juli 2015",
+            "endDate": "Nov. 2015",
+            "highlights": [
+                "CMS Contao Support",
+                "Customer Support",
+                "Server Administration",
+                "Webdesign"
             ]
         }
     ],
@@ -130,8 +193,8 @@
             "institution": "Stadwerke Gelsenkirchen",
             "area": "IT Specialist Application Development",
             "url": "https://www.stadtwerke-gelsenkirchen.de/",
-            "startDate": "2012",
-            "endDate": "2015",
+            "startDate": "Aug. 2012",
+            "endDate": "Juli 2015",
             "location": "Gelsenkirchen"
         },
         {
