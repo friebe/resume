@@ -532,6 +532,40 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
 .section-head {
   margin-bottom: 0.75rem;
   display: inline;
@@ -573,6 +607,11 @@ video {
 .mx-5 {
   margin-left: 1.25rem;
   margin-right: 1.25rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .my-8 {
@@ -652,19 +691,6 @@ video {
   border-radius: 9999px;
 }
 
-.border-b-2 {
-  border-bottom-width: 2px;
-}
-
-.border-dotted {
-  border-style: dotted;
-}
-
-.border-gray-400 {
-  --tw-border-opacity: 1;
-  border-color: rgb(156 163 175 / var(--tw-border-opacity));
-}
-
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -728,10 +754,6 @@ video {
   color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
-.underline-offset-4 {
-  text-underline-offset: 4px;
-}
-
 .shadow-2xl {
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
@@ -781,253 +803,354 @@ video {
 </head>
 
 <body class="mx-5 mt-16 mb-3 print:mt-0 text-sm">
-    <div class="grid grid-cols-12 justify-center grid-flow-col md:gap-10">
-        <div class="col-start-4 col-span-6 md:col-start-2 md:col-span-2">
-            <div class="profile-card">
-                <div class="bg-white">
-                    <div class="flex mb-3 justify-center">
-                        <img class="w-40 h-auto bg-white rounded-full shadow-2xl print:hidden" alt="Jan Friebe"
-                            src="https://friebe.uber.space/img/band/avatar.png" />
+    <div class="container mx-auto">
+        <div class="grid grid-cols-12 justify-center grid-flow-col md:gap-10">
+            <div class="col-start-4 col-span-6 md:col-start-2 md:col-span-2">
+                <div class="profile-card">
+                    <div class="bg-white">
+                        <div class="flex mb-3 justify-center">
+                            <img class="w-40 h-auto bg-white rounded-full shadow-2xl print:hidden" alt="Jan Friebe"
+                                src="https://friebe.uber.space/img/band/avatar.png" />
+                        </div>
                     </div>
-                </div>
 
-                <div class="my-8">
-                    <div class="profile-details text-center">
-                        <div class="pb-5">
-                            <h5 class="mb-1 text-3xl font-medium text-gray-900 md:text-xl">Jan Friebe</h5>
-                            <span class="text-md text-gray-700">Web developer</span>
-                        </div>
+                    <div class="my-8">
+                        <div class="profile-details text-center">
+                            <div class="pb-5">
+                                <h5 class="mb-1 text-3xl font-medium text-gray-900 md:text-xl">Jan Friebe</h5>
+                                <span class="text-md text-gray-700">Web developer</span>
+                            </div>
 
-                        <div class="pb-5">
-                            <a href="mailto:kontakt@jan-friebe.de" class="text-sm text-gray-900 link" target="_blank">kontakt@jan-friebe.de
-                            </a><br>
+                            <div class="pb-5">
+                                <a href="mailto:kontakt@jan-friebe.de" class="text-sm text-gray-900 link" target="_blank">kontakt@jan-friebe.de
+                                </a><br>
 
-                            <a href="tel://+49 1575 9460303" class="text-sm text-gray-900 link" target="_blank">
-                                +49 1575 9460303
-                            </a>
-                        </div>
+                                <a href="tel://+49 1575 9460303" class="text-sm text-gray-900 link" target="_blank">
+                                    +49 1575 9460303
+                                </a>
+                            </div>
 
-                        <div class="flex gap-5 justify-center">
-                            <a class="text-gray-500" href="https://github.com/friebe" target="_blank">
-                                <span class="iconify" data-icon="ri:github-fill"></span>
-                            </a>
-                            <a class="text-gray-500" href="https://twitter.com/janfriebe" target="_blank">
-                                <span class="iconify" data-icon="ri:twitter-fill"></span>
-                            </a>
-                            <a class="text-gray-500" href="https://jan-friebe.de" target="_blank">
-                                <span class="iconify" data-icon="ri:account-circle-fill"></span>
-                            </a>
-                            <a class="text-gray-500" href="https://www.xing.com/profile/Jan_Friebe2" target="_blank">
-                                <span class="iconify" data-icon="ri:xing-fill"></span>
-                            </a>
+                            <div class="flex gap-5 justify-center">
+                                <a class="text-gray-500" href="https://github.com/friebe" target="_blank">
+                                    <span class="iconify" data-icon="ri:github-fill"></span>
+                                </a>
+                                <a class="text-gray-500" href="https://twitter.com/janfriebe" target="_blank">
+                                    <span class="iconify" data-icon="ri:twitter-fill"></span>
+                                </a>
+                                <a class="text-gray-500" href="https://jan-friebe.de" target="_blank">
+                                    <span class="iconify" data-icon="ri:account-circle-fill"></span>
+                                </a>
+                                <a class="text-gray-500" href="https://www.xing.com/profile/Jan_Friebe2" target="_blank">
+                                    <span class="iconify" data-icon="ri:xing-fill"></span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col-start-1 col-span-12 md:col-start-4 md:col-span-8">
-            <section class="pb-5">
-                <h4 class="pb-3">
-                    <span class="section-head">
-                        About</span>
-                </h4>
-                <p>  My name is Jan Friebe, a German based and trained IT specialist in application development and an graphic assitant in print and digital. My passion in software development lies between functionality and good, aesthetic designs. I take care in the experience, architecture, and code quality of the things I build..<br><br>I am also an ambitious, willing to learn and passionate dude with fun and interest in new technologies especially in frontend related topics. </p>
-            </section>
+            <div class="col-start-1 col-span-12 md:col-start-4 md:col-span-8">
+                <section class="pb-5">
+                    <h4 class="pb-3">
+                        <span class="section-head">
+                            About</span>
+                    </h4>
+                    <p>  My name is Jan Friebe, a German based and trained IT specialist in application development and an graphic assitant in print and digital. My passion in software development lies between functionality and good, aesthetic designs. I take care in the experience, architecture, and code quality of the things I build..<br><br>I am also an ambitious, willing to learn and passionate dude with fun and interest in new technologies especially in frontend related topics. </p>
+                </section>
 
-            <section class="pb-5">
-                <h4 class="pb-3">
-                    <span class="section-head">
-                        Projects</span>
-                </h4>
-                <div class="mb-3">
-                    <strong>Static Website with SSR Shopping Cart</strong>
-                    <a target="_blank" class="ml-2" href="https://github.com/friebe/frostshock-website">
-                        <span class="inline iconify" data-icon="ri:github-fill"></span>
-                    </a>
-
-                    <a target="_blank" class="ml-1" href="https://vitest.dev/">
-                        <span class="inline iconify" data-icon="ri:arrow-right-up-line"></span>
-                    </a>
-                    <p class="text-gray-600">
-                        <small> Site build with static generator Astro.js. Frontend build with Alpine.js and Tailwind CSS. Invoice generation API based with SLIM PHP</small>
-                    </p>
-                </div>
-                <div class="mb-3">
-                    <strong>Website build with kirby CMS</strong>
-                    <a target="_blank" class="ml-2" href="https://github.com/friebe/praxis-rueckrat">
-                        <span class="inline iconify" data-icon="ri:github-fill"></span>
-                    </a>
-
-                    <a target="_blank" class="ml-1" href="https://vitest.dev/">
-                        <span class="inline iconify" data-icon="ri:arrow-right-up-line"></span>
-                    </a>
-                    <p class="text-gray-600">
-                        <small> Static, file based website</small>
-                    </p>
-                </div>
-                <div class="mb-3">
-                    <strong>Portfolio</strong>
-                    <a target="_blank" class="ml-2" href="https://github.com/friebe/portfolio">
-                        <span class="inline iconify" data-icon="ri:github-fill"></span>
-                    </a>
-
-                    <a target="_blank" class="ml-1" href="https://vitest.dev/">
-                        <span class="inline iconify" data-icon="ri:arrow-right-up-line"></span>
-                    </a>
-                    <p class="text-gray-600">
-                        <small> Website build by static generator Astro.js and Tailwind CSS</small>
-                    </p>
-                </div>
-                <div class="mb-3">
-                    <strong>Resume Generator</strong>
-                    <a target="_blank" class="ml-2" href="https://github.com/vitest-dev/vitest">
-                        <span class="inline iconify" data-icon="ri:github-fill"></span>
-                    </a>
-
-                    <a target="_blank" class="ml-1" href="https://vitest.dev/">
-                        <span class="inline iconify" data-icon="ri:arrow-right-up-line"></span>
-                    </a>
-                    <p class="text-gray-600">
-                        <small> Build static html file via json data into handlebar template and generate pdf file via pupeteer</small>
-                    </p>
-                </div>
-            </section>
-
-            <section class="pb-5">
-                <h4 class="pb-3">
-                    <span class="section-head">
-                        Work experience</span>
-                </h4>
-                <p>
-                    <strong>
-                        <a class="link" href="https://delos.biz/" target="_blank">ODAS IT
+                <section class="pb-5">
+                    <h4 class="pb-3">
+                        <span class="section-head">
+                            Projects</span>
+                    </h4>
+                    <div class="mb-3">
+                        <strong>Static Website with SSR Shopping Cart</strong>
+                        <a target="_blank" class="ml-2" href="https://github.com/friebe/frostshock-website">
+                            <span class="inline iconify" data-icon="ri:github-fill"></span>
                         </a>
-                    </strong>
-                    <span>Frontend Engineer</span>
-                </p>
-                <p>
-                    <small>
-                        <span class="space-right"> 2021 - Present | Dorsten</span>
-                    </small>
-                </p>
-                <p></p>
-                <ul class='pl-8 pt-2 list-disc'>
-                    <li> Integrated Vite into Nuxt 3 resulted in 50x faster development time. </li>
-                    <li> Authored &#x60;unplugin&#x60; unifing the API between Webpack and Vite. </li>
-                    <li> Created Vitest that improved the developer experience on testing. </li>
-                </ul>
-            </section>
 
-            <section class="pb-5">
-                <h4 class="pb-3">
-                    <span class="section-head">
-                        Education</span>
-                </h4>
+                        <a target="_blank" class="ml-1" href="https://vitest.dev/">
+                            <span class="inline iconify" data-icon="ri:arrow-right-up-line"></span>
+                        </a>
+                        <p class="text-gray-600">
+                            <small> Site build with static generator Astro.js. Frontend build with Alpine.js and Tailwind CSS. Invoice generation API based with SLIM PHP</small>
+                        </p>
+                    </div>
+                    <div class="mb-3">
+                        <strong>Website build with kirby CMS</strong>
+                        <a target="_blank" class="ml-2" href="https://github.com/friebe/praxis-rueckrat">
+                            <span class="inline iconify" data-icon="ri:github-fill"></span>
+                        </a>
 
-                <div class="mb-3">
-                    <p>
-                        <strong>
-                            <a class="link" href="https://www.stadtwerke-gelsenkirchen.de/" target="_blank">Stadwerke Gelsenkirchen
-                            </a>
-                        </strong>
-                        <span>IT Specialist Application Development</span>
-                    </p>
-                    <p>
-                        <small>
-                            <span class=""> 2012 - 2015 | Gelsenkirchen</span>
-                        </small>
-                    </p>
-                    <p></p>
+                        <a target="_blank" class="ml-1" href="https://vitest.dev/">
+                            <span class="inline iconify" data-icon="ri:arrow-right-up-line"></span>
+                        </a>
+                        <p class="text-gray-600">
+                            <small> Static, file based website</small>
+                        </p>
+                    </div>
+                    <div class="mb-3">
+                        <strong>Portfolio</strong>
+                        <a target="_blank" class="ml-2" href="https://github.com/friebe/portfolio">
+                            <span class="inline iconify" data-icon="ri:github-fill"></span>
+                        </a>
+
+                        <a target="_blank" class="ml-1" href="https://vitest.dev/">
+                            <span class="inline iconify" data-icon="ri:arrow-right-up-line"></span>
+                        </a>
+                        <p class="text-gray-600">
+                            <small> Website build by static generator Astro.js and Tailwind CSS</small>
+                        </p>
+                    </div>
+                    <div class="mb-3">
+                        <strong>Resume Generator</strong>
+                        <a target="_blank" class="ml-2" href="https://github.com/vitest-dev/vitest">
+                            <span class="inline iconify" data-icon="ri:github-fill"></span>
+                        </a>
+
+                        <a target="_blank" class="ml-1" href="https://vitest.dev/">
+                            <span class="inline iconify" data-icon="ri:arrow-right-up-line"></span>
+                        </a>
+                        <p class="text-gray-600">
+                            <small> Build static html file via json data into handlebar template and generate pdf file via pupeteer</small>
+                        </p>
+                    </div>
+                </section>
+
+                <section class="pb-5">
+                    <h4 class="pb-3">
+                        <span class="section-head">
+                            Work experience</span>
+                    </h4>
+                    <div class="mb-3">
+                        <p>
+                            <strong>
+                                <a class="link" href="https://delos.biz/" target="_blank">ODAS IT
+                                </a>
+                            </strong>
+                            <span>Frontend Engineer</span>
+                        </p>
+                        <p>
+                            <small>
+                                <span class="space-right"> 2021 - Present | Dorsten</span>
+                            </small>
+                        </p>
+                        <p></p>
+                        </div>
+                    <div class="mb-3">
+                        <p>
+                            <strong>
+                                <a class="link" href="https://impact-tec.com/" target="_blank">Impact Technology GmbH
+                                </a>
+                            </strong>
+                            <span>Software Engineer</span>
+                        </p>
+                        <p>
+                            <small>
+                                <span class="space-right"> Sep. 2019 - Dez. 2020 | Essen</span>
+                            </small>
+                        </p>
+                        <p></p>
+                        <ul class='pl-8 pt-2 list-disc'>
+                            <li> Intern fake OCR application in react </li>
+                            <li> Next.js/PHP application to configure your own shoes. Buy via api based shopware instance. </li>
+                            <li> Next.js CRM application to collect data about different apartments </li>
+                        </ul>
+                        </div>
+                    <div class="mb-3">
+                        <p>
+                            <strong>
+                                <a class="link" href="https://9elements.com/de" target="_blank">9elements Agency GmbH
+                                </a>
+                            </strong>
+                            <span>Software Engineer</span>
+                        </p>
+                        <p>
+                            <small>
+                                <span class="space-right"> Aug. 2019 - Aug. 2019 | Bochum</span>
+                            </small>
+                        </p>
+                        <p></p>
+                        <ul class='pl-8 pt-2 list-disc'>
+                            <li> Learn Ruby on Rails </li>
+                            <li> Learn Angular.js </li>
+                        </ul>
+                        </div>
+                    <div class="mb-3">
+                        <p>
+                            <strong>
+                                <a class="link" href="https://delos.biz" target="_blank">ODAS IT
+                                </a>
+                            </strong>
+                            <span>PHP Developer</span>
+                        </p>
+                        <p>
+                            <small>
+                                <span class="space-right"> Mai 2016 - Aug. 2019 | Dorsten</span>
+                            </small>
+                        </p>
+                        <p></p>
+                        <ul class='pl-8 pt-2 list-disc'>
+                            <li> First Steps in Symfony Component Development </li>
+                            <li> Contao CMS module developmen in PHP </li>
+                            <li> CSS/SCSS </li>
+                            <li> Customer Support </li>
+                            <li> Web - and Printdesign </li>
+                        </ul>
+                        </div>
+                    <div class="mb-3">
+                        <p>
+                            <strong>
+                                <a class="link" href="http://www.mrotzeck.com/" target="_blank">ODAS IT
+                                </a>
+                            </strong>
+                            <span>Frontend Engineer</span>
+                        </p>
+                        <p>
+                            <small>
+                                <span class="space-right"> Dez. 2015 - März 2016 | Essen</span>
+                            </small>
+                        </p>
+                        <p></p>
+                        <ul class='pl-8 pt-2 list-disc'>
+                            <li> React Component Engeneering </li>
+                            <li> Fix CSS Issues </li>
+                            <li> Web - and Printdesign </li>
+                        </ul>
+                        </div>
+                    <div class="mb-3">
+                        <p>
+                            <strong>
+                                <a class="link" href="https://www.stadtwerke-gelsenkirchen.de/" target="_blank">Gelsen-net
+                                </a>
+                            </strong>
+                            <span>Software Engineer</span>
+                        </p>
+                        <p>
+                            <small>
+                                <span class="space-right"> Juli 2015 - Nov. 2015 | Gelsenkirchen</span>
+                            </small>
+                        </p>
+                        <p></p>
+                        <ul class='pl-8 pt-2 list-disc'>
+                            <li> CMS Contao Support </li>
+                            <li> Customer Support </li>
+                            <li> Server Administration </li>
+                            <li> Webdesign </li>
+                        </ul>
+                        </div>
+                </section>
+
+                <section class="pb-5">
+                    <h4 class="pb-3">
+                        <span class="section-head">
+                            Education</span>
+                    </h4>
+
+                    <div class="mb-3">
+                        <p>
+                            <strong>
+                                <a class="link" href="https://www.stadtwerke-gelsenkirchen.de/" target="_blank">Stadwerke Gelsenkirchen
+                                </a>
+                            </strong>
+                            <span>IT Specialist Application Development</span>
+                        </p>
+                        <p>
+                            <small>
+                                <span class=""> Aug. 2012 - Juli 2015 | Gelsenkirchen</span>
+                            </small>
+                        </p>
+                        <p></p>
+                    </div>
+                    <div class="mb-3">
+                        <p>
+                            <strong>
+                                <a class="link" href="https://www.max-born-berufskolleg.de/" target="_blank">Max born Berufskolleg
+                                </a>
+                            </strong>
+                            <span>Design Assistant print &amp; digital</span>
+                        </p>
+                        <p>
+                            <small>
+                                <span class=""> 2009 - 2012 | Recklinghausen</span>
+                            </small>
+                        </p>
+                        <p></p>
+                    </div>
+                </section>
+
+                <section class="pb-5">
+                    <h4 class="pb-3">
+                        <span class="section-head">
+                            Stack</span>
+                    </h4>
+
+                    <dl class="mb-8 ovrflow-hidden clear-both">
+                        <dt style="max-width: 120px; width: 20%" class="float-left font-bold">Frontend</dt>
+                        <dd style="width: 80%" class="float-left ">
+                            JavaScript/Typescript, Vue, React/Next, Vite, HTML, CSS/SCSS
+                        </dd>
+                    </dl>
+                    <dl class="mb-8 ovrflow-hidden clear-both">
+                        <dt style="max-width: 120px; width: 20%" class="float-left font-bold">Backend</dt>
+                        <dd style="width: 80%" class="float-left ">
+                            Node, MySQL, Symfony
+                        </dd>
+                    </dl>
+                    <dl class="mb-8 ovrflow-hidden clear-both">
+                        <dt style="max-width: 120px; width: 20%" class="float-left font-bold">Mobile</dt>
+                        <dd style="width: 80%" class="float-left ">
+                            Tauri, PWA
+                        </dd>
+                    </dl>
+                    <dl class="mb-8 ovrflow-hidden clear-both">
+                        <dt style="max-width: 120px; width: 20%" class="float-left font-bold">Languages</dt>
+                        <dd style="width: 80%" class="float-left ">
+                            Ruby, Java, JavaScript, PHP
+                        </dd>
+                    </dl>
+                    <dl class="mb-8 ovrflow-hidden clear-both">
+                        <dt style="max-width: 120px; width: 20%" class="float-left font-bold">Design</dt>
+                        <dd style="width: 80%" class="float-left ">
+                            AD PS/AI/ID/XD, Figma, Protyping, Wireframing, Pen and Paper, RWD
+                        </dd>
+                    </dl>
+                </section>
+                
+                <section class="pb-5">
+                    <h4 class="pb-3">
+                        <span class="section-head">
+                            Interests</span>
+                    </h4>
+
+                    <dl class="mb-8 ovrflow-hidden clear-both">
+                        <dt style="max-width: 120px; width: 20%" class="float-left font-bold">Sport</dt>
+                        <dd style="width: 80%" class="float-left ">
+                            Boxing, Jogging
+                        </dd>
+                    </dl>
+                    <dl class="mb-8 ovrflow-hidden clear-both">
+                        <dt style="max-width: 120px; width: 20%" class="float-left font-bold">Reading</dt>
+                        <dd style="width: 80%" class="float-left ">
+                            Biographies, Nonfiction
+                        </dd>
+                    </dl>
+                </section>
+
+                <div class="text-center">
+                    <a target="_blank" class="print:hidden" href="https://resume.jan-friebe.de/resume.pdf">
+                        <span class="link">
+                            PDF Version
+                        </span>
+                    </a>
+
+
+                    <a target="_blank" class="hidden print:block" href="https://resume.jan-friebe.de/">
+                        <span class="link">
+                            Online Version
+                        </span>
+                    </a>
                 </div>
-                <div class="mb-3">
-                    <p>
-                        <strong>
-                            <a class="link" href="https://www.max-born-berufskolleg.de/" target="_blank">Max born Berufskolleg
-                            </a>
-                        </strong>
-                        <span>Design Assistant print &amp; digital</span>
-                    </p>
-                    <p>
-                        <small>
-                            <span class=""> 2009 - 2012 | Recklinghausen</span>
-                        </small>
-                    </p>
-                    <p></p>
-                </div>
-            </section>
-
-            <section class="pb-5">
-                <h4 class="pb-3">
-                    <span class="section-head">
-                        Stack</span>
-                </h4>
-
-                <dl class="mb-8 ovrflow-hidden clear-both">
-                    <dt style="max-width: 120px; width: 20%" class="float-left font-bold">Frontend</dt>
-                    <dd style="width: 80%" class="float-left ">
-                        JavaScript/Typescript, Vue, React/Next, Vite, HTML, CSS/SCSS
-                    </dd>
-                </dl>
-                <dl class="mb-8 ovrflow-hidden clear-both">
-                    <dt style="max-width: 120px; width: 20%" class="float-left font-bold">Backend</dt>
-                    <dd style="width: 80%" class="float-left ">
-                        Node, MySQL, Symfony
-                    </dd>
-                </dl>
-                <dl class="mb-8 ovrflow-hidden clear-both">
-                    <dt style="max-width: 120px; width: 20%" class="float-left font-bold">Mobile</dt>
-                    <dd style="width: 80%" class="float-left ">
-                        Tauri, PWA
-                    </dd>
-                </dl>
-                <dl class="mb-8 ovrflow-hidden clear-both">
-                    <dt style="max-width: 120px; width: 20%" class="float-left font-bold">Languages</dt>
-                    <dd style="width: 80%" class="float-left ">
-                        Ruby, Java, JavaScript, PHP
-                    </dd>
-                </dl>
-                <dl class="mb-8 ovrflow-hidden clear-both">
-                    <dt style="max-width: 120px; width: 20%" class="float-left font-bold">Design</dt>
-                    <dd style="width: 80%" class="float-left ">
-                        AD PS/AI/ID/XD, Figma, Protyping, Wireframing, Pen and Paper, RWD
-                    </dd>
-                </dl>
-            </section>
-            
-            <section class="pb-5">
-                <h4 class="pb-3">
-                    <span class="section-head">
-                        Interests</span>
-                </h4>
-
-                <dl class="mb-8 ovrflow-hidden clear-both">
-                    <dt style="max-width: 120px; width: 20%" class="float-left font-bold">Sport</dt>
-                    <dd style="width: 80%" class="float-left ">
-                        Boxing, Jogging
-                    </dd>
-                </dl>
-                <dl class="mb-8 ovrflow-hidden clear-both">
-                    <dt style="max-width: 120px; width: 20%" class="float-left font-bold">Reading</dt>
-                    <dd style="width: 80%" class="float-left ">
-                        Biographies, Nonfiction
-                    </dd>
-                </dl>
-            </section>
-
-            <div class="text-center">
-                <a target="_blank" class="print:hidden" href="https://resume.jan-friebe.de/resume.pdf">
-                    <span class="link">
-                        PDF Version
-                    </span>
-                </a>
-
-
-                <a target="_blank" class="hidden print:block" href="https://resume.jan-friebe.de/">
-                    <span class="link">
-                        Online Version
-                    </span>
-                </a>
             </div>
         </div>
     </div>
