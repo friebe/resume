@@ -42,6 +42,7 @@
         },
         {
             "keywords": [
+                "NoSQL",
                 "Node",
                 "MySQL",
                 "Symfony"
@@ -83,7 +84,7 @@
     "projects": [
         {
             "displayName": "Static Website with SSR Shopping Cart",
-            "summary": "Site build with static generator Astro.js. Frontend build with Alpine.js and Tailwind CSS. Invoice generation API based with SLIM PHP",
+            "summary": "Site build with static generator Astro. Frontend build with Alpine.js and Tailwind CSS. Invoice generation API based with SLIM PHP",
             "website": "https://vitest.dev/",
             "githubUrl": "https://github.com/friebe/frostshock-website",
             "primaryLanguage": "Javascript/Typescript/PHP"
@@ -92,27 +93,27 @@
             "displayName": "Website build with kirby CMS",
             "summary": "Static, file based website",
             "website": "https://vitest.dev/",
-            "githubUrl": "https://github.com/friebe/praxis-rueckrat",
+            "githubUrl": "https://github.com/friebe/praxis-rueckgrat",
             "primaryLanguage": "PHP/Symfony"
         },
         {
             "displayName": "Portfolio",
-            "summary": "Website build by static generator Astro.js and Tailwind CSS",
+            "summary": "Website build by static generator Astro and Tailwind CSS",
             "website": "https://vitest.dev/",
-            "githubUrl": "https://github.com/friebe/portfolio",
+            "githubUrl": "https://github.com/friebe/jan-friebe.de",
             "primaryLanguage": "Javascript/Typescript"
         },
         {
             "displayName": "Resume Generator",
             "summary": "Build static html file via json data into handlebar template and generate pdf file via pupeteer",
             "website": "https://vitest.dev/",
-            "githubUrl": "https://github.com/vitest-dev/vitest",
-            "primaryLanguage": "Node/javascript"
+            "githubUrl": "https://github.com/friebe/resume",
+            "primaryLanguage": "Node/javascript/Mustache"
         }
     ],
     "work": [
         {
-            "company": "ODAS IT",
+            "company": "ODAS IT GmbH",
             "position": "Frontend Engineer",
             "website": "https://delos.biz/",
             "location": "Dorsten",
@@ -146,7 +147,7 @@
             ]
         },
         {
-            "company": "ODAS IT",
+            "company": "ODAS IT GmbH",
             "position": "PHP Developer",
             "website": "https://delos.biz",
             "location": "Dorsten",
@@ -154,29 +155,29 @@
             "endDate": "Aug. 2019",
             "highlights": [
                 "First Steps in Symfony Component Development",
-                "Contao CMS module developmen in PHP",
+                "Contao CMS module development in PHP",
                 "CSS/SCSS",
                 "Customer Support",
                 "Web - and Printdesign"
             ]
         },
         {
-            "company": "ODAS IT",
+            "company": "Mrotzeck Agentur für Werbung e.K",
             "position": "Frontend Engineer",
             "website": "http://www.mrotzeck.com/",
             "location": "Essen",
             "startDate": "Dez. 2015",
             "endDate": "März 2016",
             "highlights": [
-                "React Component Engeneering",
+                "React Component development",
                 "Fix CSS Issues",
                 "Web - and Printdesign"
             ]
         },
         {
-            "company": "Gelsen-net",
+            "company": "GELSEN-NET Kommunikationsgesellschaft mbH",
             "position": "Software Engineer",
-            "website": "https://www.stadtwerke-gelsenkirchen.de/",
+            "website": "https://www.stadtwerke-gelsenkirchen.de/gelsen-net.html",
             "location": "Gelsenkirchen",
             "startDate": "Juli 2015",
             "endDate": "Nov. 2015",
@@ -190,7 +191,7 @@
     ],
     "education": [
         {
-            "institution": "Stadwerke Gelsenkirchen",
+            "institution": "Stadwerke Gelsenkirchen GmbH",
             "area": "IT Specialist Application Development",
             "url": "https://www.stadtwerke-gelsenkirchen.de/",
             "startDate": "Aug. 2012",
