@@ -122,8 +122,19 @@
             "highlights": []
         },
         {
+            "company": "Jan Friebe :: Webentwicklung (self-employed)",
+            "position": "Software Developer / owner",
+            "website": "https://jan-friebe.de",
+            "startDate": "2016",
+            "endDate": "2020",
+            "highlights": [
+                "Website development with Contao CMS",
+                "Webdesign"
+            ]
+        },
+        {
             "company": "Impact Technology GmbH",
-            "position": "Software Engineer",
+            "position": "Software Developer",
             "website": "https://impact-tec.com/",
             "location": "Essen",
             "startDate": "Sep. 2019",
@@ -136,7 +147,7 @@
         },
         {
             "company": "9elements Agency GmbH",
-            "position": "Software Engineer",
+            "position": "Software Developer",
             "website": "https://9elements.com/de",
             "location": "Bochum",
             "startDate": "Aug. 2019",
@@ -163,7 +174,7 @@
         },
         {
             "company": "Mrotzeck Agentur für Werbung e.K",
-            "position": "Frontend Engineer",
+            "position": "Frontend Developer",
             "website": "http://www.mrotzeck.com/",
             "location": "Essen",
             "startDate": "Dez. 2015",
@@ -176,7 +187,7 @@
         },
         {
             "company": "GELSEN-NET Kommunikationsgesellschaft mbH",
-            "position": "Software Engineer",
+            "position": "Software Developer",
             "website": "https://www.stadtwerke-gelsenkirchen.de/gelsen-net.html",
             "location": "Gelsenkirchen",
             "startDate": "Juli 2015",
@@ -184,7 +195,7 @@
             "highlights": [
                 "CMS Contao Support",
                 "Customer Support",
-                "Server Administration",
+                "Linux Server Administration",
                 "Webdesign"
             ]
         }
