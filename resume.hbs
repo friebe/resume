@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="favicon.ico">
-    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
-    {{!-- <link rel="icon" type="image/png" href="https://jan-friebe.de/favicon.png"/> --}}
+    <link rel="icon" href="https://jan-friebe.de/favicon.ico"/>
     <title>{{#resume.basics}}{{name}}{{/resume.basics}} - Résumé</title>
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     {{!-- For dev mode include tailwind without purge --}}
@@ -23,7 +22,7 @@
                 <div class="profile-card">
                     <div class="bg-white">
                         <div class="flex mb-3 justify-center">
-                            <img class="w-40 h-auto bg-white rounded-full shadow-2xl print:hidden" alt="{{name}}"
+                            <img class="w-40 h-auto rounded-full" alt="{{name}}"
                                 src="{{picture}}" />
                         </div>
                     </div>

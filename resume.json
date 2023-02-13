@@ -4,7 +4,7 @@
         "picture": "https://jan-friebe.de/assets/img/avatar.png",
         "label": "Web developer",
         "headline": "Willing to learn",
-        "summary": " My name is Jan Friebe, a German based and trained IT specialist in application development and an graphic assitant in print and digital. My passion in software development lies between functionality and good, aesthetic designs. I take care in the experience, architecture, and code quality of the things I build.\n\nI am also an ambitious, willing to learn and passionate dude with fun and interest in new technologies especially in frontend related topics.",
+        "summary": " My name is Jan Friebe, a german based and trained IT specialist in application development and a graphic assitant in print and digital. My passion in software development lies between functionality and good, aesthetic designs. I take care in the experience, architecture, and code quality of the things I build.\n\nI am also an ambitious, willing to learn and passionate dude with fun and interest in new technologies especially in frontend related topics.",
         "website": "https://jan-friebe.de",
         "email": "kontakt@jan-friebe.de",
         "phone": "+49 1575 9460303",
@@ -31,6 +31,7 @@
         {
             "keywords": [
                 "JavaScript/Typescript",
+                "Node",
                 "Vue",
                 "React/Next",
                 "Vite",
@@ -83,30 +84,26 @@
     ],
     "projects": [
         {
-            "displayName": "Static Website with SSR Shopping Cart",
-            "summary": "Site build with static generator Astro. Frontend build with Alpine.js and Tailwind CSS. Invoice generation API based with SLIM PHP",
-            "website": "https://vitest.dev/",
-            "githubUrl": "https://github.com/friebe/frostshock-website",
-            "primaryLanguage": "Javascript/Typescript/PHP"
+            "displayName": "Shopping Cart API with PDF invoice generation",
+            "summary": "Invoice generation API based on Mirco Framework SLIM PHP",
+            "githubUrl": "https://github.com/friebe/shopping-card-api",
+            "primaryLanguage": "PHP"
         },
         {
             "displayName": "Website build with kirby CMS",
-            "summary": "Static, file based website",
-            "website": "https://vitest.dev/",
+            "summary": "Static, file based website with text files as database",
             "githubUrl": "https://github.com/friebe/praxis-rueckgrat",
             "primaryLanguage": "PHP/Symfony"
         },
         {
-            "displayName": "Portfolio",
+            "displayName": "My Portfolio",
             "summary": "Website build by static generator Astro and Tailwind CSS",
-            "website": "https://vitest.dev/",
             "githubUrl": "https://github.com/friebe/jan-friebe.de",
             "primaryLanguage": "Javascript/Typescript"
         },
         {
             "displayName": "Resume Generator",
-            "summary": "Build static html file via json data into handlebar template and generate pdf file via pupeteer",
-            "website": "https://vitest.dev/",
+            "summary": "Render json data into handlebar template and use pupeteer as pdf generator",
             "githubUrl": "https://github.com/friebe/resume",
             "primaryLanguage": "Node/javascript/Mustache"
         }
@@ -119,7 +116,11 @@
             "location": "Dorsten",
             "startDate": "2021",
             "endDate": "Present",
-            "highlights": []
+            "highlights": [
+                "Symfony/Vue application development",
+                "SCSS development",
+                "Vanilla JavaScript/Typescript module development"
+            ]
         },
         {
             "company": "Jan Friebe :: Webentwicklung (self-employed)",
@@ -129,7 +130,8 @@
             "endDate": "2020",
             "highlights": [
                 "Website development with Contao CMS",
-                "Webdesign"
+                "Webdesign",
+                "Asset/Template generation B2B"
             ]
         },
         {
@@ -141,7 +143,7 @@
             "endDate": "Dez. 2020",
             "highlights": [
                 "Intern fake OCR application in react",
-                "Next.js/PHP application to configure your own shoes. Buy via api based shopware instance.",
+                "Next.js/PHP configurator application to configure your shoes and buying via api based shopware instance.",
                 "Next.js CRM application to collect data about different apartments"
             ]
         },
@@ -181,7 +183,7 @@
             "endDate": "März 2016",
             "highlights": [
                 "React Component development",
-                "Fix CSS Issues",
+                "Fix CSS Bugs",
                 "Web - and Printdesign"
             ]
         },
@@ -195,8 +197,9 @@
             "highlights": [
                 "CMS Contao Support",
                 "Customer Support",
-                "Linux Server Administration",
-                "Webdesign"
+                "Linux server administration",
+                "Webdesign",
+                "Build ordering system for intern service points with PHP"
             ]
         }
     ],
