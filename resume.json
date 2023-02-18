@@ -86,7 +86,7 @@
         {
             "displayName": "Shopping Cart API with PDF invoice generation",
             "summary": "Invoice generation API based on Mirco Framework SLIM PHP",
-            "githubUrl": "https://github.com/friebe/shopping-card-api",
+            "githubUrl": "https://github.com/friebe/shopping-cart-api",
             "primaryLanguage": "PHP"
         },
         {
