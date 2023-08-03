@@ -110,12 +110,23 @@
     ],
     "work": [
         {
+            "company": "Eviden Germany GmbH - an atos business",
+            "position": "Fullstack Developer",
+            "website": "https://eviden.com/",
+            "location": "Essen & remote",
+            "startDate": "Sep. 2023",
+            "endDate": "",
+            "highlights": [
+                "TBA"
+            ]
+        },
+        {
             "company": "ODAS IT GmbH",
             "position": "Frontend Engineer",
             "website": "https://delos.biz/",
             "location": "Dorsten",
-            "startDate": "2021",
-            "endDate": "Present",
+            "startDate": "Jan. 2021",
+            "endDate": "Sep. 2023",
             "highlights": [
                 "Symfony/Vue application development",
                 "SCSS development",
