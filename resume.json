@@ -34,11 +34,12 @@
                 "Node",
                 "Vue",
                 "React/Next",
+                "Angular",
                 "Vite",
                 "HTML",
                 "CSS/SCSS"
             ],
-            "level": "Intermediate",
+            "level": "Expert",
             "name": "Frontend"
         },
         {
@@ -61,12 +62,11 @@
         },
         {
             "keywords": [
-                "Ruby",
                 "Java",
                 "JavaScript",
                 "PHP"
             ],
-            "level": "Intermediate",
+            "level": "Advanced",
             "name": "Languages"
         },
         {
@@ -78,7 +78,7 @@
                 "Pen and Paper",
                 "RWD"
             ],
-            "level": "Intermediate",
+            "level": "Advanced",
             "name": "Design"
         }
     ],
@@ -88,12 +88,6 @@
             "summary": "Invoice generation API based on Mirco Framework SLIM PHP",
             "githubUrl": "https://github.com/friebe/shopping-cart-api",
             "primaryLanguage": "PHP"
-        },
-        {
-            "displayName": "Website build with kirby CMS",
-            "summary": "Static, file based website with text files as database",
-            "githubUrl": "https://github.com/friebe/praxis-rueckgrat",
-            "primaryLanguage": "PHP/Symfony"
         },
         {
             "displayName": "My Portfolio",
@@ -134,7 +128,7 @@
             ]
         },
         {
-            "company": "Jan Friebe :: Webentwicklung (self-employed)",
+            "company": "Jan Friebe :: Webentwicklung (Part-Time Position)",
             "position": "Software Developer / owner",
             "website": "https://jan-friebe.de",
             "startDate": "2016",
@@ -246,7 +240,7 @@
         {
             "name": "Sport",
             "keywords": [
-                "Boxing",
+                "Crossfit",
                 "Jogging"
             ]
         },
@@ -256,6 +250,9 @@
                 "Biographies",
                 "Nonfiction"
             ]
+        },
+        {
+            "name": "Cooking"
         }
     ],
     "softskills": [
