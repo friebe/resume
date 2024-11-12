@@ -54,14 +54,6 @@
         },
         {
             "keywords": [
-                "Tauri",
-                "PWA"
-            ],
-            "level": "Beginner",
-            "name": "Mobile"
-        },
-        {
-            "keywords": [
                 "Java",
                 "JavaScript",
                 "PHP"
@@ -252,7 +244,11 @@
             ]
         },
         {
-            "name": "Cooking"
+            "name": "Cooking",
+            "keywords": [
+                "",
+                ""
+            ]
         }
     ],
     "softskills": [
